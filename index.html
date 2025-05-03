@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrediSeguro Burgos</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+    header { background-color: #005baa; color: white; padding: 1.5rem; text-align: center; }
+    header h1 { margin: 0; }
+    section { padding: 2rem; }
+    .logo { font-size: 2rem; font-weight: bold; }
+    .tagline { font-style: italic; color: #ddd; }
+    .card { background: white; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 2rem; margin: 1rem auto; max-width: 600px; }
+    .card h2 { color: #005baa; }
+    form input, form textarea { width: 100%; padding: 0.8rem; margin: 0.5rem 0; border-radius: 5px; border: 1px solid #ccc; }
+    form button { background-color: #005baa; color: white; padding: 0.8rem; border: none; border-radius: 5px; cursor: pointer; }
+    .contact, .requirements { margin-top: 2rem; }
+    footer { background-color: #003f7d; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CrediSeguro Burgos</div>
+    <div class="tagline">Tu préstamo rápido, seguro y sin complicaciones</div>
+  </header>
+
+  <section class="card">
+    <h2>Solicita tu préstamo</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="tel" name="telefono" placeholder="Número de teléfono" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <input type="text" name="direccion" placeholder="Dirección completa" required />
+      <input type="file" name="documento" accept="image/*,.pdf" required />
+      <textarea name="comentarios" placeholder="Comentarios adicionales (opcional)"></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <section class="card requirements">
+    <h2>Requisitos</h2>
+    <ul>
+      <li>Foto del documento de identidad</li>
+      <li>Número de teléfono válido</li>
+      <li>Dirección actual</li>
+    </ul>
+  </section>
+
+  <section class="card contact">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono / WhatsApp:</strong> +34 642 05 28 41</p>
+    <p><strong>Email:</strong> nicolashder@gmail.com</p>
+    <p><strong>Zona de atención:</strong> Burgos y alrededores, España</p>
+  </section>
+
+  <footer>
+    &copy; 2025 CrediSeguro Burgos. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
