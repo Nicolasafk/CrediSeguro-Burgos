@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CrediSeguro Burgos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fdf2f2;
+      color: #3d0000;
+    }
+    header {
+      background-color: #b91c1c;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #b91c1c;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .highlight {
+      background: #fee2e2;
+      padding: 1rem;
+      border-left: 6px solid #b91c1c;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form input[type="file"] {
+      padding: 0.4rem;
+    }
+    button {
+      background-color: #b91c1c;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #7f1d1d;
+    }
+    .contact {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #f3f4f6;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+    .contact strong {
+      display: block;
+      color: #b91c1c;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CrediSeguro Burgos</h1>
+    <p>Tu préstamo rápido, seguro y sin complicaciones</p>
+  </header>
+  
+  <div class="container">
+    <h2>Solicita tu préstamo</h2>
+    
+    <div class="highlight">
+      ¡Préstamos disponibles con solo el <strong>3% de interés!</strong>
+    </div>
+    
+    <form action="https://formspree.io/f/xjkwyajd" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="text" name="direccion" placeholder="Dirección completa" required>
+      <input type="file" name="documento" accept="image/*,.pdf" required>
+      <textarea name="comentarios" rows="4" placeholder="Comentarios adicionales (opcional)"></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+    
+    <div class="contact">
+      <strong>Contacto:</strong>
+      WhatsApp: <a href="https://wa.me/34600123456" target="_blank">+34 600 123 456</a><br>
+      Email: <a href="mailto:contacto@crediseguroburgos.com">contacto@crediseguroburgos.com</a>
+    </div>
+  </div>
+</body>
+</html>
